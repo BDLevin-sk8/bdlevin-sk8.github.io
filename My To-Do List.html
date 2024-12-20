@@ -1,0 +1,172 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Web Development Learning Plan</title>
+    <link rel="icon" href="favicon-16x16.png" type="image/x-icon"> 
+    <style> 
+    	body { 
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; 
+            background-image: url('http://localhost:8080/Learning%202%20Code/Thinker2');
+            background-position: right bottom; /*Positioning*/
+            background-repeat: no-repeat; 
+        }
+        .centered {text-align:center;}
+        .day { margin-bottom: 20px; } 
+        .tasks { margin-left: 20px; }
+        .completed {text-decoration: line-through;}
+
+        /*Responsive Icon Css */
+        .webhosting img { 
+            width: 10vw; /* 10% of the viewport width */ 
+            max-width: 50px; /* Maximum width */ 
+            height: auto; /* Maintain aspect ratio */ 
+            margin: 5px; 
+            cursor: pointer; /* Indicates the element is clickable */ 
+        } 
+    
+        /* Adjustments for smaller screens */ 
+         @media (max-width: 600px) { 
+            .webhosting img { 
+                width: 15vw; /* 15% of the viewport width */ 
+                max-width: 40px; /* Smaller maximum width for smaller screens */ 
+            } 
+        } 
+    
+        /* Adjustments for larger screens */ 
+        @media (min-width: 1200px) { 
+            .webhosting img { 
+                width: 5vw; /* 5% of the viewport width */ 
+                max-width: 60px; /* Larger maximum width for larger screens */ 
+            } 
+        }
+     </style> 
+</head> 
+<body> 
+	<h1 class="centered">Study Schedule</h1> 
+    <div class="day"> 
+    	<h2>Day 1: Set Up Development Environment</h2> 
+    	<ul class="tasks"> 
+    		<li><input type="checkbox" class="task-checkbox" id="task1">Install Node.js</li> 
+        	<li><input type="checkbox" class="task-checkbox" id="task2">Install VS Code</li>
+            <li><input type="checkbox" class="task-checkbox" id="task3"> Host the project online using a platform like GitHub Pages, Netlify, or Vercel</li> 
+   		</ul> 
+   </div> 
+   <div class="day"> 
+   		<h2>Day 2: Learn HTML/CSS</h2> 
+        <ul class="tasks"> 
+        	<li><input type="checkbox" class="task-checkbox" id="task4">Complete HTML basics tutorial https://w3schools.com/html/</li> 
+            <li><input type="checkbox" class="task-checkbox" id="task5">Complete CSS basics tutorial</li> 
+            <li><input type="checkbox" class="task-checkbox" id="task6">Practice with small HTML/CSS exercises</li> 
+        </ul>
+  	</div>
+      <div class="day"> 
+    	<h2>Day 3: Learn JavaScript</h2> 
+    	<ul class="tasks"> 
+    		<li><input type="checkbox" class="task-checkbox" id="task7">Complete JavaScript basics tutorial</li> 
+        	<li><input type="checkbox" class="task-checkbox" id="task8">Practice with small JavaScript exercises (e.g., add a button that displays an alert)</li> 
+   		</ul> 
+   </div>
+   <div class="day"> 
+    <h2>Day 4: Set Up Node.js and Express Server</h2> 
+ <ul class="tasks"> 
+     <li><input type="checkbox" class="task-checkbox" id="task9">Initialize Node.js project</li> 
+     <li><input type="checkbox" class="task-checkbox" id="task10">Set up basic Express Server</li> 
+     <li><input type="checkbox" class="task-checkbox" id="task11">Create routes for CRUD operations</li> 
+ </ul>
+</div>
+<div class="day"> 
+    <h2>Day 5: Build Frontend</h2> 
+ <ul class="tasks"> 
+     <li><input type="checkbox" class="task-checkbox" id="task12">Create HTML/CSS for the to-do list app</li> 
+     <li><input type="checkbox" class="task-checkbox" id="task13">Add JavaScript to handle frontend logic (e.g., fetching and displaying to-do items)</li> 
+ </ul>
+</div>
+<div class="day"> 
+    <h2>Day 6: Test and Debug</h2> 
+ <ul class="tasks"> 
+     <li><input type="checkbox" class="task-checkbox" id="task14">Test the functionality of the app</li> 
+     <li><input type="checkbox" class="task-checkbox" id="task15">Debug any issues</li> 
+     <li><input type="checkbox" class="task-checkbox" id="task16">Refine the user interface</li> 
+ </ul>
+</div>
+<div class="day"> 
+    <h2>Day 7: Implement Basic Security</h2> 
+ <ul class="tasks"> 
+     <li><input type="checkbox" class="task-checkbox" id="task17">Implement input validation</li> 
+     <li><input type="checkbox" class="task-checkbox" id="task18">Ensure secure data transmission (HTTPS if deploying)</li> 
+ </ul>
+</div>
+    <!-- Add the remaining days similarly -->
+    
+    <!-- Adding Hyperlinks to Resources --> 
+    <div class="resources"> 
+        <h2>Resources</h2> 
+        <ul> 
+            <li><a href="https://nodejs.org/en/docs/" target="_blank">Node.js Documentation</a></li> 
+            <li><a href="https://code.visualstudio.com/docs" target="_blank">VS Code Documentation</a></li> 
+            <li><a href="https://www.w3schools.com/html/" target="_blank">HTML Basics Tutorial</a></li> 
+            <li><a href="https://www.w3schools.com/css/" target="_blank">CSS Basics Tutorial</a></li>
+        </ul> 
+    </div>
+    <div class="webhosting"> 
+        <h2>Webhosting Sites</h2> 
+        <div class="resource-links"> 
+            <a href="https://github.com/login" target="_blank"> 
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"> 
+            </a> 
+            <a href="https://www.netlify.com/" target="_blank"> 
+                <img src="images/netlify.png" alt="Netlify"> 
+            </a> 
+            <a href="https://vercel.com/" target="_blank"> 
+                <img src="https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/favicon.ico" alt="Vercel"> 
+            </a> 
+            <a href="https://glitch.com/" target="_blank"> 
+                <img src="https://glitch.com/favicon.ico" alt="Glitch"> 
+            </a> 
+            <a href="https://firebase.google.com/" target="_blank"> 
+                <img src="images/firebase.png" alt="Firebase"> 
+            </a> 
+            <a href="https://www.infinityfree.com/" target="_blank"> 
+                <img src="images/infinityfree.png" alt="InfinityFree"> 
+            </a> 
+            <a href="https://www.awardspace.com/" target="_blank"> 
+                <img src="https://www.awardspace.com/favicon.ico" alt="AwardSpace"> 
+            </a> 
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            alert('Get Focused and Get Busy!'); 
+            const checkboxes = document.querySelectorAll('.task-checkbox');
+
+            // Load checkbox states from localStorage 
+            checkboxes.forEach(checkbox => { 
+                const taskId = checkbox.id;
+                const isChecked = localStorage.getItem(taskId) === 'true';
+                checkbox.checked = isChecked;
+                if (isChecked) {
+                    checkbox.parentElement.classList.add('completed');
+                }
+            });
+            
+            //Save checkbox states to localStorage
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function () { 
+                    const taskItem = this.parentElement;
+                    const taskId = this.id; // Define taskId correctly here 
+                    console.log(`Saving ${taskId}: ${this.checked}`); // Debugging line 
+                    localStorage.setItem(taskId, this.checked); 
+                    if (this.checked) {
+                        taskItem.classList.add('completed'); 
+                    } else { 
+                        taskItem.classList.remove('completed'); 
+                     }
+                });
+            });
+        }); 
+    </script>
+</body>
+</html>
